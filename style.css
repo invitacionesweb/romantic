@@ -1,0 +1,354 @@
+:root {
+  --color-principal:#F5F4E9;
+  --color-secundario:#C2A687;
+  --color-terciario:#EAB643;
+  --font-principal:'Dawning of a New Day', cursive;
+  --font-secundaria:'Open Sans', sans-serif;
+}
+body {
+  background-color: var(--color-principal);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 320px;
+  font-family: var(--font-secundaria);
+
+}
+.web {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.web .fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos para la flecha (colócalos aquí o en un archivo de estilos externo) */
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#scroll-to-top img {
+  width: 40px; /* Ajusta el tamaño según tu ícono */
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Estilos del menú para desktop */
+header {
+    background-color:var(--color-principal) ;
+    margin: 0;
+    padding: 15px 15px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    color: var(--color-principal);
+    font-size: 24px;
+    width: 100%;
+  }
+  .logo img {
+    width: 60px;
+  }
+  .navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+  }
+  .menu ul{
+    width: 100%;
+    padding: auto;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .menu li {
+    margin: 0px 10px;
+
+  }
+  
+  .menu li a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+    font-weight: 700;
+    
+  }
+  
+  /* Estilos del menú hamburguesa para móviles */
+  .menu-icon {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-secundario);
+    margin: 5px 0;
+  }
+
+  /*BANNER*/
+  .banner {
+    width: 100%;
+    height: 90vh;
+    background-image:url(./IMG/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-principal);
+    animation-name: texto;
+    animation-duration: 8s;
+
+  }
+  @keyframes texto {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+  .banner h1 {
+    font-size: 4rem;
+    font-family: var(--font-principal);
+  }
+
+.boton {
+  border: 1px solid var(--color-secundario);
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+  padding: 10px 30PX;
+  text-decoration: none;
+  margin-top:0px;
+}
+.boton:hover {
+   color: var(--color-secundario);
+   background-color: var(--color-principal);
+   border: 1px solid var(--color-secundario);
+   padding: 10px 30PX;
+   text-align: center;
+   text-decoration: none;
+}
+  
+/*countdown*/
+.countdown {
+  color: var(--color-secundario);
+  background-color: var(--color-principal);
+  text-align: center;
+  height: auto;
+  padding: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 2em;
+}
+.countdown p {
+  font-size: 1.2em;
+  padding: 0;
+}
+
+.ourstory {
+  width: 100vw;
+  height: auto;
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ .ourstory_img{
+  width: auto;
+  height: auto;
+  background-image: url(./IMG/ourstory.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.ourstory_text h2{
+  font-family: var(--font-principal);
+  font-size: 2.4rem;
+  margin: 0;
+  padding: o;
+}
+
+.ourstory_text{
+  padding: 40px 30px;
+  width: auto;
+  text-align: justify;
+}
+
+/*ubicaciones*/
+
+.locations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding: 40px 20px;
+  gap: 20px;
+  color: var(--color-secundario);
+
+}
+.locations p{
+  padding-bottom: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot-button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dot-button.active {
+  background-color: var(--color-secundario);
+}
+
+
+/* A partir de 800px, colocar las imágenes una al lado de la otra */
+@media screen and (min-width: 800px) {
+  .carousel {
+      flex-direction: row;
+      width: calc(100% * 5);
+  }
+}
+  /* Media query para dispositivos móviles hamburguesa */
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color:var(--color-principal);
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      gap: 40px;
+    }
+    header {
+        text-align: start;
+
+    }
+    .ourstory {
+        grid-template-columns: 1fr;
+    }
+    .ourstory_img{
+      display: none;
+    
+    }
+    .ourstory_text{
+      background-image: url(./IMG/ourstory.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+    }
+    .ourstory_text h2{
+      writing-mode: vertical-rl;
+      font-size: 2.6rem;
+      padding-top: 20px;
+      transform: rotate(-180deg);
+    }
+
+    .ourstory_text p {
+      text-align: end;
+
+    }
+    .locations {
+      grid-template-columns:1fr;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .locations p{
+      padding: 20px 50px 30px 50px;
+      margin: auto;
+    }
+    
+    .banner {
+      width: 100%;
+      height: 100vh;
+      background-image:url(./IMG/backgroundmovile.png);
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu.active {
+      display: flex;
+    }
+  
+    .menu li {
+      margin-left: 0;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .menu li:hover {
+      background-color: var(--color-principal);
+      color: var(--color-secundario);
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  

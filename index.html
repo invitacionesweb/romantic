@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan & Martina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body >
+  <!-- Contenido de tu sitio web -->
+  <header class="fade-in">
+    <nav class="navbar">
+      <div class="logo"><img src="./IMG/iconovios.png" alt=""></div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#nosotros">NOSOTROS</a></li>
+        <li><a href="#">MAPS</a></li>
+        <li><a href="#">RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
+     <!-- banner -->
+     <div class="banner">
+       <h1>Romeo y Maite</h1>
+       <a class="boton" href="">AGENDAR</a>
+     </div>
+    <!-- Cuenta regresiva -->
+    <div class="countdown">
+      <p>FALTAN:</p>
+      <div id="clock"></div>
+      <script src="countdown.js"></script>
+    </div>
+    <div id="nosotros" class="ourstory">
+        <div  class="ourstory_img">
+          
+        </div>
+        <div class="ourstory_text">
+          <h2>Nuestra historia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat aspernatur amet ipsam cum quasi. Voluptatem dignissimos ipsum repudiandae doloribus possimus, tempore dolorum sint sit vel itaque praesentium atque pariatur!
+            Suscipit, quis aliquid. Nisi minima dolorum ut debitis quae repellat, harum id architecto ducimus molestias consectetur. Quas deserunt est libero ut ipsum harum magnam aliquid fugiat! Excepturi maiores dolores autem.
+            Quaerat voluptas accusantium, sint non tempore cupiditate repudiandae distinctio libero ex iste vero voluptate suscipit? Vel quasi error alias nihil, inventore odio, deleniti, soluta eius odit hic ex quam? Blanditiis.
+            Ea incidunt hic minima placeat nostrum? Ullam aut, labore unde quas quia sed ipsa ratione omnis error dolorum aperiam nobis mollitia vitae explicabo? Aspernatur expedita dolor, optio labore vero est!
+          
+          Lorem.</p>
+        </div>
+    </div>
+    <div class="locations">
+        <div class="location_one">
+            <img src="" alt="">
+            <img src="./IMG/iglesia.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odio in repellat labore, voluptas fuga quis dolorem totam quibusdam blanditiis voluptatem, at modi mollitia minus cupiditate maiores, esse quia. Explicabo!</p>
+            <a class="boton" href="">COMO LLEGAR</a>
+        </div>
+        <div class="location_one">
+            <img src="./IMG/music.png" alt="">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odio in repellat labore, voluptas fuga quis dolorem totam quibusdam blanditiis voluptatem, at modi mollitia minus cupiditate maiores, esse quia. Explicabo!</p>
+            <a class="boton" href="">COMO LLEGAR</a>
+        </div>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel">
+          <img src="./IMG/img1.png" alt="Imagen 1">
+          <img src="./IMG/img2.png" alt="Imagen 2">
+          <img src="./IMG/img3.png" alt="Imagen 3">
+          <img src="./IMG/img4.png" alt="Imagen 4">
+          <img src="./IMG/img5.png" alt="Imagen 5">
+          
+      </div>
+  </div>
+
+  <div class="carousel-dots"></div>
+    <!-- Contenido de tu sitio web -->
+   
+
+    <div class="social-media"  >
+        <div class="social_spotify">
+            <img src="" alt="">
+            <h3>Ceremonia</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odio in repellat labore, voluptas fuga quis dolorem totam quibusdam blanditiis voluptatem, at modi mollitia minus cupiditate maiores, esse quia. Explicabo!</p>
+            <a href="">COMO LLEGAR</a>
+        </div>
+        <div class="social_instagram">
+            <img src="" alt="">
+            <h3>Ceremonia</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odio in repellat labore, voluptas fuga quis dolorem totam quibusdam blanditiis voluptatem, at modi mollitia minus cupiditate maiores, esse quia. Explicabo!</p>
+            <a href="">COMO LLEGAR</a>
+        </div>
+    </div>
+    <div class="quote">
+        <h3>Tantos siglos, tantos mundos, tanto espacio y coincidir</h3>
+    </div>
+    <div class="dresscode">
+        <h3>Dress code</h3>
+        <p>Elegante</p>
+    </div>
+    <div class="mesaderegalos">
+        <p>Tu presencia es lo mas importante, pero si deseas hacernos un regalo puedes colaborar con nuestra luna de miel</p>
+        <a href="">DATOS BANCARIOS</a>
+    </div>
+
+    <div class="end">
+        <p></p>
+    </div>
+  
+    <script src="script1.js"></script>
+
+  <!-- Flecha de volver al inicio -->
+  <div id="scroll-to-top">
+    <a href="#inicio">
+      <img src="./IMG/arrow.png" alt="Volver al inicio">
+    </a>
+  </div>
+
+  <!-- Script para el desplazamiento suave -->
+  <script>
+    // Espera a que se cargue el DOM
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollToTopBtn = document.querySelector("#scroll-to-top");
+
+      scrollToTopBtn.addEventListener("click", () => {
+        // Comprueba la compatibilidad con "scroll-behavior"
+        if ("scrollBehavior" in document.documentElement.style) {
+          // Usa el desplazamiento suave del navegador
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        } else {
+          // Desplazamiento suave de respaldo para navegadores antiguos
+          scrollToTop(0, 600);
+        }
+      });
+
+      // Función de desplazamiento suave de respaldo para navegadores antiguos
+      function scrollToTop(to, duration) {
+        const start = window.scrollY || document.documentElement.scrollTop;
+        const change = to - start;
+        const increment = 20;
+        let currentTime = 0;
+
+        const animateScroll = function () {
+          currentTime += increment;
+          const val = Math.easeInOutQuad(currentTime, start, change, duration);
+          window.scrollTo(0, val);
+          if (currentTime < duration) {
+            requestAnimationFrame(animateScroll);
+          }
+        };
+
+        Math.easeInOutQuad = function (t, b, c, d) {
+          t /= d / 2;
+          if (t < 1) return c / 2 * t * t + b;
+          t--;
+          return -c / 2 * (t * (t - 2) - 1) + b;
+        };
+
+        requestAnimationFrame(animateScroll);
+      }
+    });
+  </script>
+  
+<script src="script.js"></script>
+<script src="aparicion.js"></script>
+</body>
+</html>
+
+</body>
+</html>
