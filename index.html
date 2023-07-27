@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan & Martina</title>
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -43,7 +47,8 @@
         <div  class="ourstory_img">
           
         </div>
-        <div class="ourstory_text">
+
+        <div data-aos="fade-up" class="ourstory_text">
           <h2>Nuestra historia</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat aspernatur amet ipsam cum quasi. Voluptatem dignissimos ipsum repudiandae doloribus possimus, tempore dolorum sint sit vel itaque praesentium atque pariatur!
             Suscipit, quis aliquid. Nisi minima dolorum ut debitis quae repellat, harum id architecto ducimus molestias consectetur. Quas deserunt est libero ut ipsum harum magnam aliquid fugiat! Excepturi maiores dolores autem.
@@ -54,13 +59,13 @@
         </div>
     </div>
     <div class="locations">
-        <div class="location_one">
+        <div  data-aos="fade-up" class="location_one">
             <img src="" alt="">
             <img src="./IMG/iglesia.png" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odio in repellat labore, voluptas fuga quis dolorem totam quibusdam blanditiis voluptatem, at modi mollitia minus cupiditate maiores, esse quia. Explicabo!</p>
             <a class="boton" href="">COMO LLEGAR</a>
         </div>
-        <div class="location_one">
+        <div  data-aos="fade-up" class="location_one">
             <img src="./IMG/music.png" alt="">
           
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odio in repellat labore, voluptas fuga quis dolorem totam quibusdam blanditiis voluptatem, at modi mollitia minus cupiditate maiores, esse quia. Explicabo!</p>
@@ -169,8 +174,15 @@
     });
   </script>
   
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 <script src="script.js"></script>
 <script src="aparicion.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
 
