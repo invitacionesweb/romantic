@@ -12,19 +12,9 @@ body {
   box-sizing: border-box;
   min-width: 320px;
   font-family: var(--font-secundaria);
+  overflow-x:hidden;
 
 }
-.web {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.web .fade-in {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Estilos para la flecha (colócalos aquí o en un archivo de estilos externo) */
 #scroll-to-top {
   position: fixed;
@@ -38,6 +28,18 @@ body {
   height: 40px;
   cursor: pointer;
 }
+
+.web {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.web .fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* Estilos del menú para desktop */
 header {
